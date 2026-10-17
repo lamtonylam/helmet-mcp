@@ -1,0 +1,1623 @@
+<!doctype html><!-- START of: finna - layout/layout.phtml -->
+<html lang="fi">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/themes/custom/images/webapp-icon-180.png?_=1693198867"
+    />
+    <link rel="manifest" href="/themes/custom/images/manifest.json?_=1710753061" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="Finna" />
+    <title>Tapahtui virhe | helmet.fi</title>
+    <link href="/themes/custom/images/favicon.ico?_=1684833562" rel="icon" type="image/x-icon" />
+    <link
+      href="/Search/OpenSearch?method=describe"
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="Haku kirjastoluettelosta"
+    />
+    <link
+      href="/cache/84106b9706866e46c11221c9c140d173.min.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/themes/bootstrap5/css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link
+      href="/cache/3719db7324dac5a160083888a7df07c8.min.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script nonce="GlYvAslTGMcJkK+bMlOIeaTY/dTTwc0D7fF5jjVgavk=">
+      //<!--
+      var userIsLoggedIn = false;
+      //-->
+    </script>
+    <script
+      nonce="GlYvAslTGMcJkK+bMlOIeaTY/dTTwc0D7fF5jjVgavk="
+      src="/cache/164eff0393a024ee62b25cf7d80d3e57.min.js"
+    ></script>
+    <script nonce="GlYvAslTGMcJkK+bMlOIeaTY/dTTwc0D7fF5jjVgavk=">
+      //<!--
+      var keepAliveInterval = 120;
+      VuFind.path = "";
+      VuFind.defaultSearchBackend = "Solr";
+      VuFind.addTranslations({
+        change_hold_success: "Varaus muutettu",
+        show_more: "Lis\u00e4\u00e4",
+        show_less: "V\u00e4hemm\u00e4n",
+        Organisation: "Kirjasto",
+        "location-service": "Kirjastokartta",
+        login: "Kirjaudu",
+        none_selected: "Mik\u00e4 tahansa",
+        selected: "valittu",
+        shelf_location: "Hylly",
+        request_change_done:
+          "Muutospyynt\u00f6 l\u00e4hetetty. Muutokset n\u00e4kyv\u00e4t vasta, kun pyynt\u00f6 on hyv\u00e4ksytty.",
+        other_records: "Muita aineistoja",
+        records: "Aineistoja",
+        result_count: "%%count%% tulosta",
+        search_placeholder: "Etsi...",
+        Image: "Kuva",
+        show_filters: "N\u00e4yt\u00e4 rajaukset",
+        hide_filters: "Piilota rajaukset",
+        "Narrow Search": "Rajaa hakua",
+        Sort: "J\u00e4rjest\u00e4",
+        "Results per page": "Tuloksia sivulla",
+        sort_relevance: "Osuvuus",
+        sort_year: "Vuosi (uusin ensin)",
+        "sort_year asc": "Vuosi (vanhin ensin)",
+        sort_callnumber: "Luokka",
+        sort_author: "Tekij\u00e4",
+        sort_title: "Teoksen nimi",
+        sort_last_indexed: "Viimeksi muuttunut",
+        radiusPrefix: "S\u00e4de",
+        circleCaption: "Rajaa alue",
+        clearCaption: "Tyhjenn\u00e4 rajaukset",
+        removeCaption: "Tyhjenn\u00e4",
+        map_zoom_in: "L\u00e4henn\u00e4",
+        map_zoom_out: "Loitonna",
+        geolocation_inactive: "Selaimesi asetukset est\u00e4v\u00e4t paikannuksen.",
+        street_search_checking_for_geolocation: "Tarkistetaan sijaintia",
+        street_search_geolocation_available: "Selaimesi tukee paikannusta. Haetaan sijaintiasi...",
+        geolocation_position_unavailable:
+          "Sijaintisi ei ole t\u00e4ll\u00e4 hetkell\u00e4 saatavissa.",
+        geolocation_other_error:
+          "Sijaintisi haku ep\u00e4onnistui tuntemattomasta syyst\u00e4. Tarkista ett\u00e4 selaimesi tukee paikannusta.",
+        geolocation_timeout:
+          "Paikannus keskeytettiin, koska se kesti liian kauan. Haku toimii parhaiten ulkotiloissa.",
+        street_search_no_streetname_found: "street_search_no_streetname_found",
+        street_search_reversegeocode_unavailable: "street_search_reversegeocode_unavailable",
+        street_search_searching_for: "street_search_searching_for",
+        street_search_coordinates_found: "Sijaintisi on l\u00f6ydetty.",
+        street_search_coordinates_found_accuracy_bad:
+          "Sijaintisi on l\u00f6ydetty, mutta paikannuksen tarkkuus voi olla huono.",
+        embedded_content_heading:
+          "Sis\u00e4ll\u00f6n n\u00e4ytt\u00e4minen edellytt\u00e4\u00e4 ulkopuolisen sivuston ev\u00e4steiden hyv\u00e4ksymist\u00e4",
+        embedded_content_description:
+          "T\u00e4m\u00e4 sis\u00e4lt\u00f6 haetaan osoitteesta %%serviceBaseUrl%%. Sen n\u00e4ytt\u00e4miseen vaaditaan, ett\u00e4 hyv\u00e4ksyt sivuston ev\u00e4steet. P\u00e4\u00e4set n\u00e4kem\u00e4\u00e4n sis\u00e4ll\u00f6n joko siirtym\u00e4ll\u00e4 ulkoiselle sivustolle tai sallimalla ev\u00e4steasetuksista seuraavat: %%consentCategories%%.",
+        embedded_content_external_link: "Siirry ulkoiselle sivustolle",
+        "Cookie Settings": "Ev\u00e4steasetukset",
+        "Open in a new window": "Avaa uuteen ikkunaan",
+        "Next Record": "Seuraava tietue",
+        "Previous Record": "Edellinen tietue",
+        "No Cover Image": "Ei kansikuvaa",
+        "Image Carousel": "Kuvakaruselli",
+        "Go to slide": "Siirry kohtaan",
+        "Carousel::First": "Ensimm\u00e4inen",
+        "Carousel::go_to_page": "Siirry sivulle %s",
+        "Carousel::Last": "Viimeinen",
+        "Carousel::Next": "Seuraava",
+        "Carousel::page_number": "Sivu %s",
+        "Carousel::Prev": "Edellinen",
+        "Carousel::Select Page": "Valitse sivu",
+        "Carousel::slide_label": "%s \/ %s",
+        "Carousel::Start Autoplay": "Aloita automaattitoisto",
+        "Carousel::Stop Autoplay": "Lopeta automaattitoisto",
+        select_a11y_help: "Selaa tuloksia nuolin\u00e4pp\u00e4imill\u00e4",
+        select_a11y_placeholder: "Hae valikosta",
+        select_a11y_noresults: "Ei tuloksia",
+        select_a11y_results: "tulosta",
+        select_a11y_delete_item: "Poista",
+        select_a11y_delete: "select_a11y_delete",
+        select_a11y_clear: "Tyhjenn\u00e4",
+        datepicker_selected: "valittu",
+        loan_history_download: "Lataa lainaushistoria",
+        loan_history_download_part: "Lataa osa %%part%%\/%%lastPart%%",
+        autocomplete_phrase: "Hae t\u00e4sm\u00e4lleen",
+        autocomplete_section_suggestion: "Hakuehdotukset",
+        autocomplete_section_facet: "Hakurajaukset",
+        autocomplete_section_isbn: "Painoksen tiedot",
+        Title: "Hae otsikoista",
+        Author: "Hae tekij\u00f6ist\u00e4",
+        Subject: "Hae aiheista",
+        add_tag_success: "Tagit tallennettu",
+        bulk_email_success: "Tietueet l\u00e4hetetty",
+        bulk_limit_exceeded:
+          "Valittujen m\u00e4\u00e4r\u00e4 %%count%% ylitt\u00e4\u00e4 enimm\u00e4ism\u00e4\u00e4r\u00e4n %%limit%% t\u00e4lle toiminnolle.",
+        bulk_noitems_advice: "Ei valittuja tietueita. Rastita tietueen viereinen laatikko.",
+        bulk_save_success: "Tietueet tallennettu onnistuneesti",
+        channel_more_items: "N\u00e4yt\u00e4 enemm\u00e4n",
+        clear_selection: "Tyhjenn\u00e4 valinta (%%count%%)",
+        close: "Sulje",
+        collection_empty:
+          "Arkistoon\/kokoelmaan ei sis\u00e4lly tietueita tai tiedot eiv\u00e4t ole julkisia.",
+        del_search_num: "Poista hakuryhm\u00e4 %%num%%",
+        eol_ellipsis: "\u2026",
+        error_occurred: "Tapahtui virhe",
+        go_to_list: "N\u00e4yt\u00e4 lista",
+        hold_available: "Noudettavissa",
+        less_ellipsis: "v\u00e4hemm\u00e4n\u2026",
+        libphonenumber_invalid: "Virheellinen puhelinnumero",
+        libphonenumber_invalidcountry: "Virheellinen maakoodi",
+        libphonenumber_invalidregion: "Virheellinen aluekoodi:",
+        libphonenumber_notanumber: "Annettu arvo ei n\u00e4ytt\u00e4nyt puhelinnumerolta",
+        libphonenumber_toolong: "Annettu arvo on liian pitk\u00e4 ollakseen puhelinnumero",
+        libphonenumber_tooshort: "Annettu arvo on liian lyhyt ollakseen puhelinnumero",
+        libphonenumber_tooshortidd: "Liian lyhyt puhelinnumero maakoodin j\u00e4lkeen",
+        loading_ellipsis: "Lataa\u2026",
+        modified_filter_count: "Olet muokannut %%count%% suodatinta.",
+        more_ellipsis: "lis\u00e4\u00e4\u2026",
+        no_description: "Kuvausta ei saatavissa.",
+        nohit_heading: "Ei tuloksia!",
+        number_thousands_separator: "\u2008",
+        sms_success: "Viesti l\u00e4hetetty.",
+        "No pickup locations available": "Ei noutopaikkoja saatavilla",
+        "Phone number invalid": "Virheellinen puhelinnumero",
+        "Invalid country calling code": "Virheellinen maakoodi",
+        "Invalid region code": "Virheellinen aluekoodi:",
+        "The string supplied did not seem to be a phone number":
+          "Annettu arvo ei n\u00e4ytt\u00e4nyt puhelinnumerolta",
+        "The string supplied is too long to be a phone number":
+          "Annettu arvo on liian pitk\u00e4 ollakseen puhelinnumero",
+        "The string supplied is too short to be a phone number":
+          "Annettu arvo on liian lyhyt ollakseen puhelinnumero",
+        "Phone number too short after IDD": "Liian lyhyt puhelinnumero maakoodin j\u00e4lkeen",
+        account_checkouts_due: "Pian er\u00e4\u00e4ntyv\u00e4t lainat",
+        account_checkouts_overdue: "My\u00f6h\u00e4ss\u00e4olevat lainat",
+        account_has_alerts: "Tilill\u00e4si on huomioitavaa",
+        account_normal_checkouts: "My\u00f6hemmin er\u00e4\u00e4ntyv\u00e4t lainat",
+        account_requests_available: "Noudettavissa",
+        account_requests_in_transit: "Matkalla",
+        account_requests_other: "Muut",
+      });
+      VuFind.addIcons({
+        "record-next":
+          '<span class="icon icon--font fi fi-arrow-right" role="img" aria-hidden="true"><\/span>',
+        "record-prev":
+          '<span class="icon icon--font fi fi-arrow-left" role="img" aria-hidden="true"><\/span>',
+        "show-less":
+          '<span class="icon icon--font fa fa-chevron-up" role="img" aria-hidden="true"><\/span>',
+        "show-more":
+          '<span class="icon icon--font fa fa-chevron-down" role="img" aria-hidden="true"><\/span>',
+        warning:
+          '<span class="icon icon--font fa fa-exclamation-triangle" role="img" aria-hidden="true"><\/span>',
+        "model-3d": '<span class="icon icon--font fi fi-3d" role="img" aria-hidden="true"><\/span>',
+        "feed-pause":
+          '<span class="icon icon--font fa fa-pause-circle" role="img" aria-hidden="true"><\/span>',
+        "feed-play":
+          '<span class="icon icon--font fa fa-play-circle" role="img" aria-hidden="true"><\/span>',
+        "map-expand":
+          '<span class="icon icon--font fa fa-expand" role="img" aria-hidden="true"><\/span>',
+        "map-collapse":
+          '<span class="icon icon--font fa fa-compress" role="img" aria-hidden="true"><\/span>',
+        "map-remove":
+          '<span class="icon icon--font fa fa-times" role="img" aria-hidden="true"><\/span>',
+        "map-narrow":
+          '<span class="icon icon--font fa fa-crosshairs" role="img" aria-hidden="true"><\/span>',
+        "map-marker":
+          '<span class="icon icon--font fa fa-map-marker" role="img" aria-hidden="true"><\/span>',
+        "popup-close":
+          '<span class="icon icon--font fa fa-close" role="img" aria-hidden="true"><\/span>',
+        "filter-expand":
+          '<span class="icon icon--font fa fa-chevron-down" role="img" aria-hidden="true"><\/span>',
+        "filter-collapse":
+          '<span class="icon icon--font fa fa-chevron-up" role="img" aria-hidden="true"><\/span>',
+        spinner:
+          '<span class="icon icon--font fa fa-spinner icon--spin" role="img" aria-hidden="true"><\/span>',
+        "ui-dots-menu":
+          '<span class="icon icon--font fa fa-ellipsis-h" role="img" aria-hidden="true"><\/span>',
+        "facet-checked":
+          '<span class="icon icon--font fa fa-check-square fa-regular" role="img" aria-hidden="true"><\/span>',
+        "facet-collapse":
+          '<span class="icon icon--font fa fa-chevron-down" role="img" aria-hidden="true"><\/span>',
+        "facet-exclude":
+          '<span class="icon icon--font fa fa-times" role="img" aria-hidden="true"><\/span>',
+        "facet-expand":
+          '<span class="icon icon--font fa fa-chevron-right" role="img" aria-hidden="true"><\/span>',
+        "facet-noncollapsible":
+          '<span class="icon icon--font fa fa-none" role="img" aria-hidden="true"><\/span>',
+        "facet-unchecked":
+          '<span class="icon icon--font fa fa-square fa-regular" role="img" aria-hidden="true"><\/span>',
+        "format-file":
+          '<span class="icon icon--font fa fa-file fa-regular" role="img" aria-hidden="true"><\/span>',
+        "format-folder":
+          '<span class="icon icon--font fa fa-folder" role="img" aria-hidden="true"><\/span>',
+        "my-account":
+          '<span class="icon icon--font fi fi-user" role="img" aria-hidden="true"><\/span>',
+        "my-account-notification":
+          '<span class="icon icon--font fa fa-bell" role="img" aria-hidden="true"><\/span>',
+        "my-account-warning":
+          '<span class="icon icon--font fa fa-exclamation-triangle" role="img" aria-hidden="true"><\/span>',
+        "place-hold":
+          '<span class="icon icon--font fa fa-flag" role="img" aria-hidden="true"><\/span>',
+        "place-ill-request":
+          '<span class="icon icon--font fa fa-right-left" role="img" aria-hidden="true"><\/span>',
+        "place-storage-retrieval":
+          '<span class="icon icon--font fa fa-truck" role="img" aria-hidden="true"><\/span>',
+        "status-available":
+          '<span class="icon icon--font fi fi-circle-filled" role="img" aria-hidden="true"><\/span>',
+        "status-pending":
+          '<span class="icon icon--font fa fa-clock fa-regular" role="img" aria-hidden="true"><\/span>',
+        "status-ready":
+          '<span class="icon icon--font fa fa-bell" role="img" aria-hidden="true"><\/span>',
+        "status-unavailable":
+          '<span class="icon icon--font fi fi-remove" role="img" aria-hidden="true"><\/span>',
+        "status-uncertain":
+          '<span class="icon icon--font fa fa-circle" role="img" aria-hidden="true"><\/span>',
+        "status-unknown":
+          '<span class="icon icon--font fa fa-circle-o" role="img" aria-hidden="true"><\/span>',
+        "ui-failure":
+          '<span class="icon icon--font fa fa-times" role="img" aria-hidden="true"><\/span>',
+        "ui-success":
+          '<span class="icon icon--font fa fa-check" role="img" aria-hidden="true"><\/span>',
+        "truncate-less":
+          '<span class="icon icon--font fa fa-chevron-up" role="img" aria-hidden="true"><\/span>',
+        "truncate-more":
+          '<span class="icon icon--font fa fa-chevron-down" role="img" aria-hidden="true"><\/span>',
+      });
+      VuFind.setCspNonce("GlYvAslTGMcJkK+bMlOIeaTY/dTTwc0D7fF5jjVgavk=");
+      VuFind.setCurrentSearchId(null);
+      VuFind.cookie.setCookiePath("\/");
+      VuFind.cookie.setCookieSameSite("Lax");
+      //-->
+    </script>
+    <!-- START of: finna - layout/Additions/general-post-head.phtml -->
+    <meta
+      name="description"
+      content="Varaa ja lainaa aineistoa Helsingin, Espoon, Vantaan ja Kauniaisten kaupunginkirjastoista kätevästi verkossa. Tutustu kirjaston palveluihin ja hyödynnä kirjaston laajaa kirjojen, elokuvien ja muiden sisältöjen valikoimaa."
+    />
+    <script type="text/javascript" nonce="GlYvAslTGMcJkK+bMlOIeaTY/dTTwc0D7fF5jjVgavk=">
+      (function () {
+        var sc = document.createElement("script");
+        sc.type = "text/javascript";
+        sc.async = true;
+        sc.src =
+          ("https:" == document.location.protocol
+            ? "https://zefzhat.appspot.com"
+            : "http://www.livezhat.com") + "/code/helmetkirjasto/7ojnqxm";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(sc, s);
+      })();
+    </script>
+    <!-- END of: finna - layout/Additions/general-post-head.phtml -->
+  </head>
+  <body class="template-dir- template-name- vufind-offcanvas vufind-offcanvas-left">
+    <div class="cookie-consent-wrapper">
+      <div
+        class="cookie-consent js-cookie-consent js-loaded"
+        role="region"
+        aria-label="Evästeasetukset"
+        tabindex="-1"
+        data-focus-on-load="important"
+      >
+        <div class="cookie-consent__overlay">
+          <p class="cookie-consent__title">
+            Tämä sivusto käyttää evästeitä toimiakseen mahdollisimman hyvin.
+          </p>
+
+          <div class="cookie-consent__settings">
+            <p>
+              <button
+                class="btn btn-link icon-link cookie-consent__settings-toggle collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#cookie_consent_settings_collapse"
+                aria-expanded="false"
+                aria-controls="cookie_consent_settings_collapse"
+              >
+                <span
+                  class="icon icon--font fa fa-chevron-down icon-link__icon collapse-icon-open"
+                  role="img"
+                  aria-hidden="true"
+                ></span>
+                <span
+                  class="icon icon--font fa fa-chevron-up icon-link__icon collapse-icon-close"
+                  role="img"
+                  aria-hidden="true"
+                ></span>
+                <span class="icon-link__label"> Tarkemmat tiedot </span>
+              </button>
+            </p>
+            <div class="collapse js-settings-collapse" id="cookie_consent_settings_collapse">
+              <div class="cookie-consent__description">
+                Sivustolla käytetyt evästeet on luokiteltu käyttötarkoituksen mukaan. Alla on
+                kuvaukset kaikista evästekategorioista, ja voit sallia tai kieltää evästeiden
+                käytön.
+                <a href="/Content/privacy" target="_blank">Tietoa sivuston tietosuojasta</a>.
+              </div>
+
+              <div class="cookie-consent__categories">
+                <div class="cookie-consent__category">
+                  <label class="cookie-consent__category-checkbox">
+                    <input
+                      name="category_collapse_chat_cb"
+                      type="checkbox"
+                      class="js-category-checkbox"
+                      data-category="chat"
+                      checked="checked"
+                      disabled="checked"
+                      data-essential="true"
+                    />
+                    Chat-palveluiden evästeet
+                  </label>
+                  <div class="cookie-consent__category-description">
+                    Kolmannen osapuolen chat-palveluiden asettamat evästeet.
+                  </div>
+                  <div class="cookie-consent__category-details">
+                    <p>
+                      <button
+                        class="btn btn-link icon-link cookie-consent__category-details-toggle collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#category_collapse_chat"
+                        aria-expanded="false"
+                        aria-controls="category_collapse_chat"
+                      >
+                        <span
+                          class="icon icon--font fa fa-chevron-down icon-link__icon collapse-icon-open"
+                          role="img"
+                          aria-hidden="true"
+                        ></span>
+                        <span
+                          class="icon icon--font fa fa-chevron-up icon-link__icon collapse-icon-close"
+                          role="img"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="icon-link__label">
+                          Evästeiden yksityiskohdat
+                          <span class="visually-hidden">Chat-palveluiden evästeet</span>
+                        </span>
+                      </button>
+                    </p>
+                    <div class="collapse" id="category_collapse_chat">
+                      <table class="table table-responsive table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nimi</th>
+                            <th scope="col">Toimialue</th>
+                            <th scope="col">Kuvaus</th>
+                            <th scope="col">Erääntyminen</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Nimi">
+                              helmetkirjastolz_last_poller_helmetkirjasto (kolmas osapuoli)
+                            </td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Välilehden tunniste, jossa chat on avattu (käytetään, jos sama chat on
+                              avoinna useassa välilehdessä).
+                            </td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjastorefpg (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Sivu, jolta chatiin tultiin. Käytetään automaattisissa toiminnoissa,
+                              kun käytetään toimintoa joka perustuu sivulle tuloreittiin.
+                            </td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjastoprotos (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Tieto onko chatin upotusta käytetty https-sivulla, tarvitaan jotta
+                              tiedetään onko storage käytettävissä jokaisella sivulla (http ja
+                              https-versio sivuista eivät jaa storagea).
+                            </td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjastol_act (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Aika jolloin chat on ollut viimeksi aktiivinen. Käytetään
+                              automaattisissa toiminnoissa.
+                            </td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjastovisitorKey (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Chatin sivukävijätunniste kävijäseurantaa varten.
+                            </td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjastolastChatTime (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Sivukävijän viimeisin vierailuaika. Käytetään chatin automaattisissa
+                              toiminnoissa, kun käytetään toimintoa, joka perustuu edelliseen
+                              käyntiaikaan.
+                            </td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjastovisitStart (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Sivukävijän ensimmäinen vierailuaika. Käytetään chatin automaattisissa
+                              toiminnoissa, kun käytetään toimintoa, joka perustuu ensimmäiseen
+                              käyntiaikaan.
+                            </td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjastochatName (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">Chat-keskustelun nimi.</td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjastousername (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">Keskustelijan ”nimi”.</td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjastochatAs (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Tieto käynnistettiinkö chat-keskustelu automaattisesti vai sivukävijän
+                              toimesta.
+                            </td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjastochatboxstate (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Chat-widgetin näkyvä tila (näkyvissä vai pienennetty palkkiin).
+                            </td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">helmetkirjasto_se_lz_shown (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">www.helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Tieto että chatin toiminto on evaluoitu (esim. näytetäänkö
+                              automaattisesti ’_se_lz_shown’ jne). Tarvitaan, jotta
+                              kertasuoritteista automaattitoimintoa ei suoriteta uudestaan
+                              sivulatauksen jälkeen.
+                            </td>
+                            <td data-label="Erääntyminen">8 tuntia</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="cookie-consent__category">
+                  <label class="cookie-consent__category-checkbox">
+                    <input
+                      name="category_collapse_vantaakartta_cb"
+                      type="checkbox"
+                      class="js-category-checkbox"
+                      data-category="vantaa-kartta"
+                    />
+                    Karttapalveluiden evästeet
+                  </label>
+                  <div class="cookie-consent__category-description">
+                    Kolmannen osapuolen karttapalveluiden asettamat evästeet.
+                  </div>
+                  <div class="cookie-consent__category-details">
+                    <p>
+                      <button
+                        class="btn btn-link icon-link cookie-consent__category-details-toggle collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#category_collapse_vantaakartta"
+                        aria-expanded="false"
+                        aria-controls="category_collapse_vantaakartta"
+                      >
+                        <span
+                          class="icon icon--font fa fa-chevron-down icon-link__icon collapse-icon-open"
+                          role="img"
+                          aria-hidden="true"
+                        ></span>
+                        <span
+                          class="icon icon--font fa fa-chevron-up icon-link__icon collapse-icon-close"
+                          role="img"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="icon-link__label">
+                          Evästeiden yksityiskohdat
+                          <span class="visually-hidden">Karttapalveluiden evästeet</span>
+                        </span>
+                      </button>
+                    </p>
+                    <div class="collapse" id="category_collapse_vantaakartta">
+                      <table class="table table-responsive table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nimi</th>
+                            <th scope="col">Toimialue</th>
+                            <th scope="col">Kuvaus</th>
+                            <th scope="col">Erääntyminen</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Nimi">OptanonAlertBoxClosed (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">.arcgis.com</td>
+                            <td data-label="Kuvaus">
+                              Käytetään näyttämään evästeiden hyväksymisen valinta.
+                            </td>
+                            <td data-label="Erääntyminen">362 päivää</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">OptanonConsent (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">.arcgis.com</td>
+                            <td data-label="Kuvaus">
+                              Käytetään tallentamaan käyttäjän evästevalinta.
+                            </td>
+                            <td data-label="Erääntyminen">362 päivää</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">__utma (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">.arcgis.com</td>
+                            <td data-label="Kuvaus">
+                              Käyttäjän ja sessioiden tunnistamiseen käytetty eväste.
+                            </td>
+                            <td data-label="Erääntyminen">138 päivää</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">mbox (kolmas osapuoli)</td>
+                            <td data-label="Toimialue">.arcgis.com</td>
+                            <td data-label="Kuvaus">
+                              Käytetään yksittäisen session tunnistamiseen.
+                            </td>
+                            <td data-label="Erääntyminen">365 päivää</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="cookie-consent__category">
+                  <label class="cookie-consent__category-checkbox">
+                    <input
+                      name="category_collapse_essential_cb"
+                      type="checkbox"
+                      class="js-category-checkbox"
+                      data-category="essential"
+                      checked="checked"
+                      disabled="checked"
+                      data-essential="true"
+                    />
+                    Välttämättömät evästeet
+                  </label>
+                  <div class="cookie-consent__category-description">
+                    Välttämättömien evästeiden käyttöä ei voi kieltää. Ne mahdollistavat sivuston
+                    toiminnan ja tekevät sivustosta käyttäjäystävällisemmän.
+                  </div>
+                  <div class="cookie-consent__category-details">
+                    <p>
+                      <button
+                        class="btn btn-link icon-link cookie-consent__category-details-toggle collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#category_collapse_essential"
+                        aria-expanded="false"
+                        aria-controls="category_collapse_essential"
+                      >
+                        <span
+                          class="icon icon--font fa fa-chevron-down icon-link__icon collapse-icon-open"
+                          role="img"
+                          aria-hidden="true"
+                        ></span>
+                        <span
+                          class="icon icon--font fa fa-chevron-up icon-link__icon collapse-icon-close"
+                          role="img"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="icon-link__label">
+                          Evästeiden yksityiskohdat
+                          <span class="visually-hidden">Välttämättömät evästeet</span>
+                        </span>
+                      </button>
+                    </p>
+                    <div class="collapse" id="category_collapse_essential">
+                      <table class="table table-responsive table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nimi</th>
+                            <th scope="col">Toimialue</th>
+                            <th scope="col">Kuvaus</th>
+                            <th scope="col">Erääntyminen</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Nimi">cc_cookie, cookieConsent</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Käyttäjän hyväksymien evästekategorioiden muistaminen.
+                            </td>
+                            <td data-label="Erääntyminen">182 päivää</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">cc_*</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Käyttäjän hyväksymien evästekategorioiden muistaminen.
+                            </td>
+                            <td data-label="Erääntyminen">182 päivää</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">language</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">Käyttöliittymän kielen muistaminen.</td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">sidefacet-* (session storage)</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Avointen ja suljettujen fasettien muistaminen.
+                            </td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">PHPSESSID, VUFIND_SESSION</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">Käyttäjän istunnon ylläpitäminen.</td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">ui</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">Valitun teeman muistaminen.</td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">vufind_cart, vufind_cart_src</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">Kirjakorin sisällön muistaminen.</td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">vufind_search_open (session storage)</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Haussa avoinna olevien tietueiden muistaminen.
+                            </td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">collapseAuthorityInfo</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Termien lisätietojen näkyvyyden muistaminen.
+                            </td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">finna.fi, _shib_session_*, _opensaml_req_ss*</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">Käyttäjän istunnon ylläpitäminen.</td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">finnaSurvey</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">Käyttäjäkyselyn näkyvyyden muistaminen.</td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">location-info-* (local storage)</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Valitun organisaation muistaminen tietojen näyttämiseksi.
+                            </td>
+                            <td data-label="Erääntyminen">Ei koskaan</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">preferredRecordSource</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">Ensisijaisten tietolähteiden muistaminen.</td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">loginToken</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">Kirjautumisen muistaminen.</td>
+                            <td data-label="Erääntyminen">180 päivää</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="cookie-consent__category">
+                  <label class="cookie-consent__category-checkbox">
+                    <input
+                      name="category_collapse_matomo_cb"
+                      type="checkbox"
+                      class="js-category-checkbox"
+                      data-category="matomo"
+                    />
+                    Tilastointievästeet
+                  </label>
+                  <div class="cookie-consent__category-description">
+                    Tilastointievästeiden avulla kerättyä tietoa käytetään verkkosivuston
+                    kehittämiseen.
+                  </div>
+                  <div class="cookie-consent__category-details">
+                    <p>
+                      <button
+                        class="btn btn-link icon-link cookie-consent__category-details-toggle collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#category_collapse_matomo"
+                        aria-expanded="false"
+                        aria-controls="category_collapse_matomo"
+                      >
+                        <span
+                          class="icon icon--font fa fa-chevron-down icon-link__icon collapse-icon-open"
+                          role="img"
+                          aria-hidden="true"
+                        ></span>
+                        <span
+                          class="icon icon--font fa fa-chevron-up icon-link__icon collapse-icon-close"
+                          role="img"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="icon-link__label">
+                          Evästeiden yksityiskohdat
+                          <span class="visually-hidden">Tilastointievästeet</span>
+                        </span>
+                      </button>
+                    </p>
+                    <div class="collapse" id="category_collapse_matomo">
+                      <table class="table table-responsive table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nimi</th>
+                            <th scope="col">Toimialue</th>
+                            <th scope="col">Kuvaus</th>
+                            <th scope="col">Erääntyminen</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Nimi">_pk_id.*</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Käyttäjän yksilöinti tilastoinnissa. Matomon asettama käyttäjän
+                              tunniste.
+                            </td>
+                            <td data-label="Erääntyminen">13 kuukautta</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">_pk_ref.*</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Saapumis- tai lähdetiedon muistaminen. Matomon asettama viittaajan
+                              tunniste.
+                            </td>
+                            <td data-label="Erääntyminen">6 kuukautta</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nimi">_pk_ses.*, _pk_cvar.*, _pk_hsr.*</td>
+                            <td data-label="Toimialue">helmet.finna.fi</td>
+                            <td data-label="Kuvaus">
+                              Vierailuun liittyvien tietojen tallennus. Matomon asettama istunnon
+                              tunniste.
+                            </td>
+                            <td data-label="Erääntyminen">Istunnon päättyessä</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cookie-consent__buttons">
+            <button class="btn btn-primary cookie-consent__save-settings js-save-settings hidden">
+              Tallenna asetukset
+            </button>
+            <button class="btn btn-primary cookie-consent__accept-all js-accept-all">
+              Salli kaikki evästeet
+            </button>
+            <button class="btn btn-primary cookie-consent__accept-essential js-accept-essential">
+              Salli vain välttämättömät evästeet
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script nonce="GlYvAslTGMcJkK+bMlOIeaTY/dTTwc0D7fF5jjVgavk=">
+      //<!--
+      window.addEventListener("load", function () {
+        VuFind.cookie.setupConsent({
+          cookieName: "cc_cookie",
+          autoClearCookies: true,
+          revision: 0,
+          cookieExpirationDays: 182,
+          categoryConfig: {
+            chat: { DefaultEnabled: false, Essential: true },
+            "vantaa-kartta": {
+              DefaultEnabled: false,
+              Essential: false,
+              AutoClearCookies: [
+                {
+                  Name: "(helmetkirjastolz_last_poller_helmetkirjasto|helmetkirjastorefpg|helmetkirjastoprotos|helmetkirjastol_act|helmetkirjastovisitorKey|helmetkirjastolastChatTime|helmetkirjastovisitStart|helmetkirjastochatName|helmetkirjastousername|helmetkirjastochatAs|helmetkirjastochatboxstate|helmetkirjasto_se_lz_shown|OptanonAlertBoxClosed|OptanonConsent|__utma|mbox)",
+                },
+              ],
+            },
+            essential: { DefaultEnabled: true, Essential: true },
+            matomo: {
+              DefaultEnabled: false,
+              Essential: false,
+              ControlVuFindServices: ["matomo"],
+              AutoClearCookies: [{ Name: "\/^_pk_\/" }],
+            },
+          },
+          controlledVuFindServices: { matomo: ["matomo"] },
+        });
+      });
+      //-->
+    </script>
+    <!-- START of: finna - search/modals.phtml -->
+    <div id="modal" class="modal fade hidden-print" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Sulje">
+            <span class="icon icon--font fa fa-times" role="img" aria-hidden="true"></span>
+          </button>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="imagepopup-modal" hidden>
+      <div class="imagepopup-holder" aria-hidden="true">
+        <div class="imagepopup-container">
+          <div class="popup-canvas paginator-canvas">
+            <button class="next-image left" title="Edellinen kuva" type="button">
+              <span class="icon icon--font fa fa-chevron-left" role="img" aria-hidden="true"></span
+              ><span class="visually-hidden">Edellinen kuva</span>
+            </button>
+            <div class="popup-nonzoom non-zoomable">
+              <div class="iconlabel"></div>
+              <img
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                alt=""
+              />
+            </div>
+            <div class="leaflet-map-image image-wrapper">
+              <img
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                alt=""
+              />
+              <div class="imagepopup-zoom-container">
+                <button class="zoom-in zoom-button" title="Lähennä">
+                  <span class="icon icon--font fi fi-zoom-in" role="img" aria-hidden="true"></span
+                  ><span class="visually-hidden">Lähennä</span>
+                </button>
+                <button class="zoom-out zoom-button" title="Loitonna">
+                  <span class="icon icon--font fi fi-zoom-out" role="img" aria-hidden="true"></span
+                  ><span class="visually-hidden">Loitonna</span>
+                </button>
+                <button class="zoom-reset zoom-button" title="Keskitä">
+                  <span class="icon icon--font fi fi-zoom-all" role="img" aria-hidden="true"></span
+                  ><span class="visually-hidden">Keskitä</span>
+                </button>
+              </div>
+              <div class="leaflet-image-loading"></div>
+            </div>
+            <div class="popup-video video-popup"></div>
+            <button class="next-image right" title="Seuraava kuva" type="button">
+              <span class="icon icon--font fa fa-chevron-right" role="img" aria-hidden="true"></span
+              ><span class="visually-hidden">Seuraava kuva</span>
+            </button>
+          </div>
+          <div class="finna-image-pagination"></div>
+        </div>
+        <div class="image-information-holder">
+          <div class="collapse-content-holder"></div>
+          <div class="record-informations">
+            <div class="record-index">
+              <span class="total"></span>
+            </div>
+            <div class="paginator-info">
+              <span class="image-index"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END of: finna - search/modals.phtml -->
+    <a class="skip-link" href="#main">Siirry sisältöön</a>
+    <header class="hidden-print">
+      <div class="container-fluid system-messages">
+        <div>
+          Musiikkivaraston aineistoa ei voi tällä hetkellä varata, koska varastossa valmistaudutaan
+          Tikkurilan kirjaston peruskorjaukseen. Voit varata musiikkivaraston aineistoa jälleen
+          huhtikuussa 2027.
+        </div>
+      </div>
+      <nav class="container-fluid navbar navbar-expand-md">
+        <!-- START of: finna - navibar.phtml -->
+        <!-- START of: finna - Section/HeaderBar.phtml -->
+        <div role="navigation" aria-label="Päävalikko" class="finna-navbar navbar-expand-md">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/"
+              ><!-- START of: finna - navibar-logo.phtml -->
+              <span class="visually-hidden">Etusivu</span>
+              <img
+                src="/themes/custom/images/finna-logo.png?_=1696332950"
+                alt=""
+                class="navbar-logo"
+                aria-hidden="true"
+              />
+              <!-- END of: finna - navibar-logo.phtml -->
+            </a>
+            <button
+              type="button"
+              class="navbar-toggler navbar-toggle collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#header-collapse"
+              aria-label="Mobiilivalikko"
+              aria-expanded="false"
+            >
+              <span class="mobilemenu-bars"
+                ><span class="icon icon--font fi fi-bars" role="img" aria-hidden="true"></span
+              ></span>
+              <span class="mobilemenu-close"
+                ><span class="icon icon--font fa fa-xmark" role="img" aria-hidden="true"></span
+              ></span>
+            </button>
+          </div>
+          <div id="header-collapse" class="collapse navbar-collapse">
+            <ul role="presentation" class="nav navbar-nav navbar-main">
+              <li class="nav-item" role="none">
+                <a href="/OrganisationInfo/Home" class="nav-link"
+                  ><span
+                    class="icon icon--font fa fa-menu_lib1"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                  ><span class="nav-link-label">Kirjastot</span></a
+                >
+              </li>
+              <li class="nav-item" role="none">
+                <a href="/Content/tapahtumat" class="nav-link"
+                  ><span
+                    class="icon icon--font fa fa-menu_events1"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                  ><span class="nav-link-label">Tapahtumat</span></a
+                >
+              </li>
+              <li class="nav-item dropdown" id="menu_palvelut">
+                <a
+                  href="#"
+                  role="button"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><span
+                    class="icon icon--font fa fa-menu_palvelut"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                  ><span class="nav-link-label">Palvelut</span>
+                  <span
+                    class="icon icon--font fa fa-chevron-down collapse-open-icon"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/Content/digituki">
+                      <span>Digituki</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/omatoimikirjastot">
+                      <span>Omatoimikirjastot</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/kirjastoautot">
+                      <span>Kirjastoautot</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/kaukopalvelu">
+                      <span>Kaukopalvelu</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/seutuvarastot">
+                      <span>Seutuvarastot</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/kotipalvelu-ja-joustoasiakkuus">
+                      <span>Kun et pääse kirjastoon</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/tulostaminen-ja-asiakastietokoneet">
+                      <span>Tulostaminen kirjastossa</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" id="menu_info">
+                <a
+                  href="#"
+                  role="button"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><span
+                    class="icon icon--font fa fa-menu_info"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                  ><span class="nav-link-label">Info</span>
+                  <span
+                    class="icon icon--font fa fa-chevron-down collapse-open-icon"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/Content/asiointi-verkkokirjastossa">
+                      <span>Näin käytät Helmet-verkkokirjastoa (Oma tili)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/kirjastokortti-ja-lainaaminen">
+                      <span>Kirjastokortti ja lainaaminen</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/kayttosaannot">
+                      <span>Käyttösäännöt</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/laina-ajat-ja-maksut">
+                      <span>Laina-ajat ja maksut</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/asiakkaan-vastuu-maksuista">
+                      <span>Asiakkaan vastuu kirjastomaksuista</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/help">
+                      <span>Aineistohaun ohjeita</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/usein-kysyttya">
+                      <span>Usein kysyttyä</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/vapaaehtoiseksi-kirjastoon">
+                      <span>Vapaaehtoiseksi kirjastoon</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/tiedonhaku">
+                      <span>Hyödyllisiä tiedonlähteitä</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" id="menu_selkokieli">
+                <a
+                  href="#"
+                  role="button"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><span
+                    class="icon icon--font fa fa-menu_selkokieli"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                  ><span class="nav-link-label">Selkokieli</span>
+                  <span
+                    class="icon icon--font fa fa-chevron-down collapse-open-icon"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/Content/kirjasto-selkokielella">
+                      <span>Kirjaston esittely</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/kayttosaannot-selkokielella">
+                      <span>Käyttösäännöt selkokielellä</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/omatoimikirjastot-selko">
+                      <span>Omatoimikirjastot selkokielellä</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://helmet.finna.fi/Search/Results?limit=0&amp;filter%5B%5D=~genre_facet%3A%22Selkokirjat%22&amp;filter%5B%5D=~genre_facet%3A%22Selkolehdet%22&amp;filter%5B%5D=~language%3A%22fin%22&amp;type=AllFields"
+                    >
+                      <span>Hae selkokirjoja</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="https://helmet.finna.fi/List/1540722">
+                      <span>Selkokirjavinkit</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" id="menu_sisallot">
+                <a
+                  href="#"
+                  role="button"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><span
+                    class="icon icon--font fa fa-menu_sisallot"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                  ><span class="nav-link-label">Sisältöjä</span>
+                  <span
+                    class="icon icon--font fa fa-chevron-down collapse-open-icon"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/Content/uutiset">
+                      <span>Uutiset</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/suosittelemme">
+                      <span>Suosittelemme juuri nyt</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/kirjallisuus">
+                      <span>Kirjallisuus</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/lapset-ja-nuoret">
+                      <span>Lapset ja nuoret</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/monikieliset-palvelut">
+                      <span>Monikieliset palvelut</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/musiikki">
+                      <span>Musiikki</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/tilat-ja-laitteet">
+                      <span>Tilat ja laitteet</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/uutuuksia">
+                      <span>Uutuuksia</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" id="menu_ekirjasto">
+                <a
+                  href="#"
+                  role="button"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><span
+                    class="icon icon--font fa fa-menu_ekirjasto"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                  ><span class="nav-link-label">E-aineistot</span>
+                  <span
+                    class="icon icon--font fa fa-chevron-down collapse-open-icon"
+                    role="img"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/Content/ekirjasto">
+                      <span>E-aineistot</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Content/ohjeet-eaineiston-kayttoon">
+                      <span>E-aineistojen ohjeet</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- START of: finna - layout/Additions/header-navibar.phtml -->
+              <!-- add li elements with class custom to match style if you need links after language options -->
+              <!--
+<li class="nav-item custom">
+  <a class="nav-link" href="" target="_blank">≤?=$this->transEsc('menu_translate');?></a>
+</li>....
+-->
+              <!-- END of: finna - layout/Additions/header-navibar.phtml -->
+            </ul>
+          </div>
+          <ul role="presentation" class="nav navbar-nav header-navbar-right">
+            <!-- START of: finna - header-allLangs.phtml -->
+            <li id="language_menu" class="nav-item dropdown">
+              <a
+                href="#"
+                id="language_menu_dropdown_button"
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-label="Kieli"
+                aria-description="Suomi valittu"
+              >
+                <span
+                  class="icon icon--font fi fi-globe lang-icon"
+                  role="img"
+                  aria-hidden="true"
+                ></span>
+                <span class="hidden-xs nav-link-label">Suomi</span>
+                <span
+                  class="icon icon--font fa fa-chevron-down collapse-open-icon"
+                  role="img"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right dropdown-menu-end">
+                <li>
+                  <a
+                    class="dropdown-item preserve-anchor active"
+                    aria-description="valittu"
+                    lang="fi"
+                    href="https://helmet.finna.fi/Record/helmet.999999999/AjaxTab?tab=holdings&amp;lng=fi"
+                  >
+                    Suomi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item preserve-anchor"
+                    lang="en-gb"
+                    href="https://helmet.finna.fi/Record/helmet.999999999/AjaxTab?tab=holdings&amp;lng=en-gb"
+                    >English</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item preserve-anchor"
+                    lang="sv"
+                    href="https://helmet.finna.fi/Record/helmet.999999999/AjaxTab?tab=holdings&amp;lng=sv"
+                    >Svenska</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- END of: finna - header-allLangs.phtml -->
+            <!-- START of: finna - header-account.phtml -->
+            <li id="loginOptions" class="nav-item">
+              <a
+                href="/MyResearch/UserLogin"
+                role="button"
+                class="btn btn-primary login-button"
+                data-lightbox=""
+                data-lightbox-onclose='window.location.href="/MyResearch/Home"'
+                ><span
+                  class="icon icon--font fi fi-user login-icon"
+                  role="img"
+                  aria-hidden="true"
+                ></span>
+                <span class="login-text">Kirjaudu</span></a
+              >
+            </li>
+            <!-- END of: finna - header-account.phtml -->
+          </ul>
+        </div>
+        <!-- END of: finna - Section/HeaderBar.phtml -->
+        <!-- END of: finna - navibar.phtml -->
+      </nav>
+    </header>
+    <section class="searchContent">
+      <h1 class="visually-hidden">Haku</h1>
+      <div class="search-form-container">
+        <div class="container">
+          <!-- START of: finna - search/searchbox.phtml -->
+          <div class="searchbox hidden-print">
+            <div class="searchbox-flex searchbox--">
+              <div class="search">
+                <div class="keyboard-box">
+                  <div class="simple-keyboard"></div>
+                </div>
+                <form
+                  id="searchForm"
+                  class="searchForm navbar-form navbar-left"
+                  method="get"
+                  action="/Search/Results"
+                  name="searchForm"
+                  autocomplete="off"
+                >
+                  <label for="searchForm_lookfor" class="visually-hidden" hidden
+                    >Hae kirjoja ja muuta aineistoa</label
+                  >
+                  <input
+                    id="searchForm_lookfor"
+                    class="searchForm_lookfor form-control search-query autocomplete-finna searcher:Solr ac-auto-submit tab:Solr handlers:Title|Author|Subject phrase:1"
+                    type="search"
+                    name="lookfor"
+                    value=""
+                    aria-label="Hakuehdot"
+                    placeholder="Hae kirjoja ja muuta aineistoa…"
+                  />
+                  <button
+                    id="searchForm-reset"
+                    class="searchForm-reset hidden"
+                    type="reset"
+                    tabindex="-1"
+                    aria-label="Tyhjennä hakuehdot"
+                  >
+                    <span class="icon icon--font fi fi-remove" role="img" aria-hidden="true"></span>
+                  </button>
+                  <div class="dropdown form-control type-dropdown">
+                    <input
+                      id="searchForm_type"
+                      type="hidden"
+                      name="type"
+                      value="AllFields"
+                      class="searchForm_type"
+                    />
+                    <a
+                      role="button"
+                      href="#"
+                      class="dropdown-toggle"
+                      aria-expanded="false"
+                      aria-label="Rajaa hakua: Kaikki kentät valittu"
+                      data-bs-toggle="dropdown"
+                      ><span>Kaikki kentät</span>
+                      <span
+                        class="icon icon--font fa fa-angle-down"
+                        role="img"
+                        aria-hidden="true"
+                      ></span
+                    ></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li>
+                        <input type="hidden" value="AllFields" />
+                        <a
+                          role="menuitem"
+                          class="dropdown-item select-type"
+                          href="#"
+                          aria-description="valittu"
+                        >
+                          Kaikki kentät
+                        </a>
+                      </li>
+                      <li>
+                        <input type="hidden" value="Title" />
+                        <a role="menuitem" class="dropdown-item select-type" href="#">
+                          Teoksen nimi
+                        </a>
+                      </li>
+                      <li>
+                        <input type="hidden" value="Author" />
+                        <a role="menuitem" class="dropdown-item select-type" href="#"> Tekijä </a>
+                      </li>
+                      <li>
+                        <input type="hidden" value="Subject" />
+                        <a role="menuitem" class="dropdown-item select-type" href="#"> Aihe </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    <span
+                      class="icon icon--font fi fi-basic-search"
+                      role="img"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Hae kirjoja ja muuta aineistoa</span>
+                  </button>
+                  <div id="searchForm_controls"></div>
+                </form>
+              </div>
+              <a href="/Search/Advanced" class="btn btn-link btn-advanced hidden-xs"
+                ><span
+                  class="icon icon--font fi fi-adv-search search-advanced-icon"
+                  role="img"
+                  aria-hidden="true"
+                ></span
+                >Tarkennettu haku</a
+              >
+            </div>
+          </div>
+          <!-- END of: finna - search/searchbox.phtml -->
+        </div>
+      </div>
+    </section>
+    <nav class="breadcrumbs" aria-label="Murupolku">
+      <div class="container">
+        <ul class="breadcrumb hidden-print">
+          <li class="breadcrumb active">Error</li>
+        </ul>
+      </div>
+    </nav>
+    <section id="main" role="main" class="main template-dir- template-name-">
+      <div id="content" class="container main-content">
+        <!-- Tämä poistaa asiakaspalvelun s-postiosoitteen virhetilanteissa -->
+        <div class="alert alert-danger">
+          <p>Pyydettyä tietuetta ei löytynyt.</p>
+          <p>Saadaksesi apua ota yhteyttä asiakaspalveluun</p>
+          <br />
+        </div>
+      </div>
+    </section>
+    <footer class="hidden-print">
+      <div class="container">
+        <!-- START of: finna - footer.phtml -->
+        <div class="footer-container">
+          <div class="footer-column">
+            <h2>Tietoa</h2>
+            <ul>
+              <li><a href="/Content/about">Mikä Helmet on?</a></li>
+              <li><a href="/Content/about_finna">Mikä Finna on?</a></li>
+              <li><a href="/Content/terms">Käyttöehdot</a></li>
+              <li><a href="/Content/saavutettavuusseloste">Saavutettavuusseloste</a></li>
+              <li><a href="/Content/privacy">Tietosuoja</a></li>
+              <li><a href="/Content/tietosuojaselosteet">Tietosuojaselosteet</a></li>
+              <li>
+                <a href="#" data-cc="show-preferencesModal" aria-haspopup="dialog"
+                  >Evästeasetukset</a
+                >
+              </li>
+              <li>
+                <a href="/Content/aineistonvalinnan-periaatteet">Miten valitsemme aineiston? </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2>Hae lisää</h2>
+            <ul>
+              <li><a href="/Search/History">Hakuhistoria</a></li>
+              <li><a href="/Search/Advanced">Tarkennettu haku</a></li>
+              <li><a href="/Browse/Home">Selaa luetteloa</a></li>
+              <!-- poistettu selaa tietokantoja ja selaa lehtiä -->
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2>Tarvitsetko apua?</h2>
+            <ul>
+              <li><a href="/Content/help">Aineistohaun ohjeita</a></li>
+              <li>
+                <a href="/Content/asiointi-verkkokirjastossa"
+                  >Näin käytät verkkokirjastoa (Oma tili)</a
+                >
+              </li>
+              <li><a href="/Feedback/Form/AcquisitionRequest">Hankintaehdotus</a></li>
+              <li><a href="/Content/palaute">Palaute</a></li>
+              <li><a href="/Content/medialle">Medialle</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-container">
+          <div class="footer-column">
+            <a href="/Content/about_finna" title="Tietoa Finnasta">
+              <img src="/themes/finna2/images/powered-by-finna_fi.png?_=1791282425" alt="" />
+              <span class="sr-only">Tietoa Finnasta</span>
+            </a>
+            <br /><br />
+          </div>
+          <div class="footer-column">
+            <a href="https://vufind.org/" title="About VuFind">
+              <img
+                src="/themes/finna2/images/vufind-logo.png?_=1791282425"
+                alt="Lisää tietoa VuFindista. Linkki aukeaa uudessa ikkunassa."
+              />
+              <span class="sr-only">About VuFind</span>
+            </a>
+          </div>
+          <div class="footer-column"></div>
+        </div>
+        <!-- END of: finna - footer.phtml -->
+      </div>
+    </footer>
+    <script nonce="GlYvAslTGMcJkK+bMlOIeaTY/dTTwc0D7fF5jjVgavk=">
+      //<!--
+      var _paq = (window._paq = window._paq || []);
+      _paq.push(["enableLinkTracking"]);
+      _paq.push([
+        "setCustomUrl",
+        "https\x3A\x2F\x2Fhelmet.finna.fi\x2FRecord\x2Fhelmet.999999999\x2FAjaxTab\x3Ftab\x3Dholdings",
+      ]);
+      _paq.push(["requireCookieConsent"]);
+      _paq.push(["deleteCustomVariables", "page"]);
+      _paq.push(["setCustomVariable", 1, "Context", "page", "page"]);
+      var title = null;
+      _paq.push(["trackPageView", title, { dimension12: "page" }]);
+      _paq.push(["trackVisibleContentImpressions"]);
+      (function () {
+        var d = document;
+        if (!d.getElementById("_matomo_js_script")) {
+          _paq.push(["setTrackerUrl", "https\x3A\x2F\x2Fanalytics.finna.fi\x2Fmatomo.php"]);
+          _paq.push(["setSiteId", 7732]);
+          var g = d.createElement("script"),
+            s = d.getElementsByTagName("script")[0];
+          g.async = true;
+          g.src = "https\x3A\x2F\x2Fanalytics.finna.fi\x2Fmatomo.js";
+          g.id = "_matomo_js_script";
+          s.parentNode.insertBefore(g, s);
+        }
+      })();
+
+      //-->
+    </script>
+    <div class="container-fluid general-post-body">
+      <div class="container">
+        <div>
+          <div>
+            <!-- START of: finna - layout/Additions/general-post-body.phtml -->
+
+            <!-- END of: finna - layout/Additions/general-post-body.phtml -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vufind-offcanvas-overlay" data-toggle="vufind-offcanvas"></div>
+  </body>
+</html>
+<!-- END of: finna - layout/layout.phtml -->

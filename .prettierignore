@@ -1,0 +1,6 @@
+# Vendored by skills-lock.json — never reformat these; the lockfile pins their hashes.
+.agents/
+
+node_modules/
+dist/
+coverage/
